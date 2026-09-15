@@ -1,0 +1,56 @@
+# =========================================================================
+# Sagar-Drishti Master Gitignore Framework
+# =========================================================================
+
+# Dependency Blocks (Never track local dependencies)
+node_modules/
+jspm_packages/
+.pnpm-store/
+
+# Core Build Outputs & Distribution Targets
+dist/
+build/
+out/
+.next/
+frontend/dist/
+
+# Development Tools, Compilers, & Cache Engines
+.eslintcache
+.parcel-cache
+.turbo
+.vercel
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# System Environment Clutter (OS specific junk)
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# Multi-dimensional Data & Massive Binary Objects (Strictly Out of Repo)
+*.nc
+*.grib
+*.grib2
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+data/raw_*
+backend/cache/
+
+# Local Environment Credentials & Cryptographic Keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
